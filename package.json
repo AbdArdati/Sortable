@@ -56,5 +56,8 @@
 		"vue",
 		"mixin"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"sortable.js": "^0.3.0"
+	}
 }
