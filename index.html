@@ -18,11 +18,13 @@
 	<meta name="description"
 		content="Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap." />
 	<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+	<script src="https://togetherjs.com/togetherjs.js"></script>
 </head>
 
 <body>
 
 	<div class="container">
+		<button id="collaborate" type="button">Collaborate</button>
 		<div class="row">
 			<h2 class="col-12">Lets find your why!</h2>
 			<p class="col-12">Please drag and drop the items that are relevent to you from this list to your list. Once you finish, please discuss your choices with your team</p>
@@ -114,5 +116,8 @@
 
 	<script src="st/app.js"></script>
 </body>
-
+<script>
+document.getElementById("collaborate")
+  .addEventListener("click", TogetherJS, false);
+</script>
 </html>
