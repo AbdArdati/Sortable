@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" type="image/png" href="st/og-image.png">
+	<title>SortableJS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="st/theme.css">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta property="og:image" content="/st/og-image.png" />
+	<meta name="keywords"
+	content="sortable, reorder, list, javascript, html5, drag and drop, dnd, animation, groups, dnd, sortableJS" />
+	<meta name="description"
+	content="Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap." />
+	<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+	<script src="https://togetherjs.com/togetherjs-min.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	
+
+</head>
+
+<body  id="boundary">
+	<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+	<button class="btn btn-info"  id="download" >Download a Screenshot</button>
+	<div class="container"class="content">
+		<div class="row">
+			<h2 class="col-12">Lets find your why!</h2>
+			<p class="col-12">Please drag and drop the items that are relevent to you from this list to your list. Once you finish, please discuss your choices with your team</p>
+		</div>
+		<hr />
+		<div class="row">
+			<h3 class="col-12">Why your contribution would help Wikipedia and the world?</h3>
+			<div class="list-group col" style="background-color:#ccc;">
+				<h2></h2>
+				<p>Please drag and drop the items that are relevent to you from this list to your list. Receiveing this training so my contribute to Wikipeid would:</p>
+				<div id="wikipedia-left" class="list-group col">
+					<div class="list-group-item tinted">let me part of the largest collaborative project run by volunteers in history</div>
+					<div class="list-group-item tinted">Close the gender gap because only 9% of Wikipedia editors are woman</div>
+					<div class="list-group-item tinted">Close the knowledge gap of the online content by translating Wikipedia articles from English to other languages in the area of their study.</div>
+					<div class="list-group-item tinted">Hlep in metigating the steady decline in the number of volunteer editors </div>
+					<div class="list-group-item tinted">Reduce the systemic content bias in different Wikipedia language editions, as some cultures, topics and perspectives tend to be underrepresented</div>
+					<div class="list-group-item tinted">Would help Wikipedia in dealing with an increasing trend of vandalism </div>
+				</div>
+			</div>
+			<div class="list-group col" style="background-color:rgb(203, 219, 241);">
+				<div class="row">
+					<div class="col-3">
+						<h2>My List</h2>
+					</div>
+					
+					<div class="col-9 input-group mb-3">
+						<input type="text" class="form-control"  id="resultWikipedia" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+						<button class="btn btn-info" id="add-item-wikipedia" type="button" name="button">Add</button>
+						</div>
+					</div>
+					<!-- <div class="col-9 input-group" width="2px" style="padding: 5px;">
+							<input   class="form-control" id="resultWikipedia" type="text" name="" placeholder="Enter item">
+							<span class="input-group-btn">
+							
+							</span>
+						</div>
+					</div> -->
+					<p>Please add items that you could not find in the list on the left</p>
+					<hr>
+				<div id="wikipedia-right" class="list-group col">
+				</div>
+				<hr>
+			</div>
+		</div>
+		<hr />
+		<div class="row">
+			<div class="card border-dark m-2" style="width: 35rem;">
+				<img src="./src/img/get.jpg" class="card-img-top" alt="...">
+				<div class="card-header">
+					<p>My contribution to Wikipedia after this training would help me to:</p>
+				</div>
+				<ul class="card-body" id="wikipediaUser-left" class="list-group list-group-flush col">
+				  <li class="list-group-item tinted">Imporve my CV</li>
+				  <li class="list-group-item tinted">develop new skills</li>
+				  <li class="list-group-item tinted">develop existing skills</li>
+				</ul>
+			  </div>
+
+			  <div class="card border-dark m-2" style="width: 35rem;">
+				<div  class="card-header">
+					<div class="row">
+						<div class="col-4">
+							<h3>My Why</h3>
+						</div>
+						<div class="col-8 input-group mb-3">
+							<input type="text" class="form-control"  id="result" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<div class="input-group-append">
+							<button class="btn btn-info" id="add-item" type="button" name="button">Add</button>
+							</div>
+						</div>
+					</div>
+					<p>Please add items that you could not find in the list on the left</p>
+				</div>
+				<div  class="card-body" id="wikipediaUser-right" >
+				</div>
+			  </div>
+		</div>
+		<hr />
+		<div class="container m-4">
+			<div class="row">
+			  <div class="col text-center">
+				<button class="btn btn-info"  id="download" >Download a Screenshot</button>
+			  </div>
+			</div>
+		  </div>
+	</div>
+
+
+	<!-- Latest Sortable -->
+	<script src="./Sortable.js"></script>
+	<script>
+		document.getElementById("download").addEventListener("click", function() {
+
+	html2canvas(document.querySelector('#boundary')).then(function(canvas) {
+
+		console.log(canvas);
+		saveAs(canvas.toDataURL(), 'file-name.png');
+	});
+	});
+
+
+	function saveAs(uri, filename) {
+
+	var link = document.createElement('a');
+
+	if (typeof link.download === 'string') {
+
+		link.href = uri;
+		link.download = filename;
+
+		//Firefox requires the link to be in the body
+		document.body.appendChild(link);
+
+		//simulate click
+		link.click();
+
+		//remove the link when done
+		document.body.removeChild(link);
+
+	} else {
+
+		window.open(uri);
+
+	}
+	}
+</script>
+	<script type="text/javascript" src="st/prettify/prettify.js"></script>
+	<script type="text/javascript" src="st/prettify/run_prettify.js"></script>
+	<script type="text/javascript" src="html2canvas.js"></script>
+	<script src="st/app.js"></script>
+</body>
+
+</html>
