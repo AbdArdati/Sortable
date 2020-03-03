@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="icon" type="image/png" href="st/og-image.png">
-	<title>SortableJS</title>
+	<title>WikiActivities</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -23,161 +23,24 @@
 <body id="boundary">
 	<div class="container" class="content">
 		<div class="row">
-				<div class="card border-dark m-2" style="width: 70rem;">
-					<div class="card-header">
-						<p>Lets find your why!</p>
-					</div>
-					<div class="card-body text-center">
-						<h4 class="col-12">Please drag and drop relevent items the lists on the left to your list on the right.</h4>
-					</div>
-				</div>
-		</div>
-		<hr />
-		<div class="row">
-			<hr />
-			<div class="row">
-				<div class="card border-dark m-2" style="width: 35rem;">
-					<img src="./src/img/get.jpg" class="card-img-top" alt="...">
-					<div class="card-header">
-						<p>My contribution to Wikipedia after this training would help me to:</p>
-					</div>
-					<ul class="card-body" id="wikipediaUser-left" class="list-group list-group-flush col">
-						<li class="list-group-item tinted">Improve my CV content </li>
-						<li class="list-group-item tinted">Develop new or existing skills such as collaboration,
-							academic writing, online content creation, citing and referencing, and IT skills</li>
-						<li class="list-group-item tinted">Wikipedia helped me and I want to give back to Wikipedia and
-							the world</li>
-						<li class="list-group-item tinted">Make new friends or colleagues who share with me the same
-							interests</li>
-						<li class="list-group-item tinted">Have fun with my friends or colleagues </li>
-						<li class="list-group-item tinted">Be part of Wikipedia editorial community </li>
-						<li class="list-group-item tinted">Improve my second language by translating Wikipedia articles
-						</li>
-						<li class="list-group-item tinted">Expand my knowledge in my area of specialty or study </li>
-						<li class="list-group-item tinted">Expand my general knowledge</li>
-					</ul>
-				</div>
-
-				<div class="card border-dark m-2" style="width: 35rem;">
-					<div class="card-header">
-						<div class="row">
-							<div class="col-4">
-								<h3>My Why</h3>
-							</div>
-							<div class="col-8 input-group mb-3">
-								<input type="text" class="form-control" id="result" placeholder="Add reason here"
-									aria-label="Add reason here" aria-describedby="basic-addon2">
-								<div class="input-group-append">
-									<button class="btn btn-info" id="add-item" type="button" name="button">Add</button>
-								</div>
-							</div>
-						</div>
-						<p>Please add items that you could not find in the list on the left</p>
-					</div>
-					<div class="card-body" id="wikipediaUser-right">
-					</div>
-				</div>
-			</div>
-			<hr />
-			<div class="row">
-				<div class="card border-dark m-2" style="width: 35rem;">
-					<img src="./src/img/give.png" class="card-img-top" alt="...">
-					<div class="card-header">
-						<p>My contribution to Wikipedia after this training would help the world to:</p>
-					</div>
-					<ul class="card-body" id="wikipedia-left" class="list-group list-group-flush col">
-						<li class="list-group-item tinted">Help to stop the steady decline in the number of volunteer
-							editors </li>
-						<li class="list-group-item tinted">Support Wikimedia vision of a world in which every single
-							human being can freely share in the sum of all knowledge </li>
-						<li class="list-group-item tinted">Increase the 17% of women biographies on Wikipedia</li>
-						<li class="list-group-item tinted">Be part of the largest collaborative project run by
-							volunteers in history</li>
-						<li class="list-group-item tinted">Support the 9% of woman Wikipedia editors</li>
-						<li class="list-group-item tinted">I want to translate articles from English to other languages
-							in my area of study to close the Knowledge gap in different Wikipedia versions </li>
-						<li class="list-group-item tinted">Reduce the systemic content bias in different Wikipedia
-							language editions, as some cultures, topics, and perspectives tend to be underrepresented
-						</li>
-						<li class="list-group-item tinted">Would help Wikipedia in dealing with an increasing trend of
-							vandalism </li>
-					</ul>
-				</div>
-
-				<div class="card border-dark m-2" style="width: 35rem;">
-					<div class="card-header">
-						<div class="row">
-							<div class="col-4">
-								<h3>My Why</h3>
-							</div>
-							<div class="col-8 input-group mb-3">
-								<input type="text" class="form-control" id="resultWikipedia"
-									placeholder="Add reason here" aria-label="Add reason here"
-									aria-describedby="basic-addon2">
-								<div class="input-group-append">
-									<button class="btn btn-info" id="add-item-wikipedia" type="button" name="button">Add</button>
-								</div>
-							</div>
-						</div>
-						<p>Please add items that you could not find in the list on the left</p>
-					</div>
-					<div class="card-body" id="wikipedia-right">
-					</div>
-				</div>
-			</div>
-			<hr />
 			<div class="container m-4">
-				<div class="row">
-					<div class="col text-center">
-						<button class="btn btn-info" id="download">Download a Screenshot</button>
+				<div class="row ">
+					<div class="col-4 text-center center">
+						<a href="why.html" target="_blank" class="btn btn-info btn-lg">Drag, me drop me, embrace me</a>
+					</div>
+					<div class="col-4 text-center center">
+						<a href="rules.html" target="_blank" class="btn btn-info btn-lg">Treasure Hunt</a>
+					</div>
+					<div class="col-4 text-center center">
+						<a href="biographies.html" target="_blank" class="btn btn-info btn-lg">Mind the gap!</a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-
-		<!-- Latest Sortable -->
-		<script src="./Sortable.js"></script>
-		<script>
-			document.getElementById("download").addEventListener("click", function () {
-
-				html2canvas(document.querySelector('#boundary')).then(function (canvas) {
-
-					console.log(canvas);
-					saveAs(canvas.toDataURL(), 'Why-I-will-edit-Wikipedia.png');
-				});
-			});
-
-
-			function saveAs(uri, filename) {
-
-				var link = document.createElement('a');
-
-				if (typeof link.download === 'string') {
-
-					link.href = uri;
-					link.download = filename;
-
-					//Firefox requires the link to be in the body
-					document.body.appendChild(link);
-
-					//simulate click
-					link.click();
-
-					//remove the link when done
-					document.body.removeChild(link);
-
-				} else {
-
-					window.open(uri);
-
-				}
-			}
-		</script>
-		<script type="text/javascript" src="st/prettify/prettify.js"></script>
-		<script type="text/javascript" src="st/prettify/run_prettify.js"></script>
-		<script type="text/javascript" src="html2canvas.js"></script>
-		<script src="st/app.js"></script>
+	<!-- Latest Sortable -->
+	<script src="st/app.js"></script>
 </body>
-
+<footer id="footer" class="mb-20"><div id="footer-content" class="text-muted mb-2">Wikipedia logo: https://en.wikipedia.org/wiki/File:Wikipedia-logo-v2.svg CC BY-SA 3.0.</div></footer>
 </html>

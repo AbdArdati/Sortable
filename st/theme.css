@@ -328,3 +328,31 @@ table[data-sortable] {
   table[data-sortable].sortable-theme-light th[data-sorted="true"] {
 	background: #e0e0e0;
   }
+
+
+  .center { 
+	height: 920px;
+	position: relative;
+  }
+  
+  .center a {
+	margin: 0;
+	width: 350px; 
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+
+  #footer {
+	height: 50px; /* the footer's total height */
+  }
+  
+  #footer-content {
+	height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+	padding: 8px;
+
+  }
+  

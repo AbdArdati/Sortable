@@ -1,0 +1,509 @@
+/*GLOBAL FOR ALL ACTIVITIES*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: 'Ubuntu', Tahoma, Geneva, sans-serif;
+/*  border:solid 1px black;*/
+}
+
+p {
+  margin: .5em 0;
+  line-height: 1.4;
+}
+
+textarea, input[type="text"] {
+  border:solid 1px #808285;
+  border-radius: 3px;
+  display: block;
+  margin: 5px 0;
+  height: 2em;
+}
+textarea {
+  min-width:400px;
+}
+
+input[name="q"] {
+  min-width: 50%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin:auto;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+/*--Colors and containers for the stylized header and footer--*/
+.mainColor {
+  float:left;
+  background-color: #56bda2;
+  width: 75%;
+}
+
+.darker {
+  float:left;
+  background-color: #2494a2;
+  width: 15%;
+}
+
+.lighter {
+  float:left;
+  background-color: #747474;
+  width: 10%;
+}
+
+.header, .footer {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.footer {
+  flex-direction: row-reverse;
+}
+
+.footer .mainColor {
+  width: 10%;
+}
+
+.footer .darker {
+  width: 15%;
+}
+
+.footer .lighter {
+  width:75%;
+}
+
+/*--Headers in text--*/
+h1 {
+  margin:0;
+  padding: 3px 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+h2 {
+  color: #747474;
+  margin: 7px 0;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/*--Links--*/
+
+a {
+  font-weight: 500;
+  color: #56bda2;
+  text-decoration: none;
+  border-bottom: 2px solid #dbb13b;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+a:visited {
+  border-bottom: 2px solid #2d3258;
+}
+
+
+/*--Slide visibility for one-page navigation--*/
+.slide {
+  padding: 0 7px;
+  display: none;
+}
+
+/*--All buttons--*/
+button {
+  background-color: #2d3258;
+  color:white;
+  display: inline-block;
+  margin:5px;
+  padding: 4px 5px;
+  border-radius: 5px;
+  border:none;
+  font-size:1em;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+/*--Navigation buttons--*/
+#navButtons {
+  height: 38px;
+}
+
+#navButtons.first #back {
+  display: none;
+}
+
+#navButtons.last #next {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  font-size: 1em;
+  margin:0;
+}
+
+li + p {
+  margin-top: .3em;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*-- Container and buttons for Showing/Hiding answers --*/
+.question {
+  border:solid 1px #3d9ed8;
+  border-radius:5px;
+  padding: 0 5px 5px 5px;
+  margin: 15px 0;
+}
+
+.answer {
+  display: none;
+  overflow: hidden;
+}
+
+.answer_button {
+  margin:2;
+  background-color: #444c8d;
+}
+
+/*-- Radio buttons and their labels stay in line--*/
+
+input[type="radio"] {
+  float: left;
+}
+
+label {
+  display: block;
+}
+
+label + li {
+  margin-top: 1.2em;
+}
+
+/*-- Bar chart made of divs for 01 How Do You Communicate --*/
+
+#input-form input[type="text"] {
+  height: 50px;
+  width: 100px;
+  font-size: 2em;
+  color: #565656;
+}
+
+#input-form {
+  border: none;
+}
+
+#generate {
+  margin-left: 40%;
+  padding: 10px;
+}
+
+input.wrongInput {
+  border: 2px solid #cc2b5e;
+  box-shadow: 0 0 5px #cc2b5e;
+}
+
+.wrong {
+ display: block;
+ padding:12px;
+ color:#cc2b5e;'
+}
+
+.graph {
+  width:100%;
+  margin: 1em 0;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  border:solid 1px #808285;
+  border-radius:5px;
+}
+
+.labels {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.label {
+  width: 70px;
+  height: 50px;
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  margin: 5px 0;
+  padding: 3px 7px;
+}
+.bars {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.unit {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.unit > span {
+  display: none;
+}
+
+.scale {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 2px;
+  color: #555658;
+}
+
+.scale > div {
+  border-width: 1px;
+  border-color: #808285;
+  border-style: none none dotted dotted;
+  width: 25%;
+  height: 1em;
+  margin-top: 5px;
+  padding: 0 2px 17px 2px;
+  line-height: .9;
+}
+
+#end {
+  border-right:dotted 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#end > span {
+  display: block;
+}
+
+
+.bar {
+  width: 25%;
+  float: right;
+  transition: all 1s ease;
+  height: 50px;
+  margin: 5px 0;
+  padding: 14px 5px;
+  box-shadow: 5px 5px 5px darkgrey;
+  color:white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.spanOutside {
+  position: relative;
+  display: block;
+  color: grey;
+}
+
+#specialCase {
+  padding-top: 3px;
+}
+
+#first {
+  background:linear-gradient(to right, #f7b733, #fc4a1a);
+  width:17%;
+}
+#second {
+  background:linear-gradient(to right, #43C6AC, #191654);
+  width:23%;
+}
+#third {
+  background:linear-gradient(to right, #cc2b5e, #753a88);
+  width:34%;
+}
+#fourth {
+  background:linear-gradient(to right, #FDFC47, #24FE41);
+  width:26%;
+}
+
+/* -- Drag'n'drop for 03 Communication Collaboration -- */
+
+.drag_n_drop {
+  border: 1px #3d9ed8 solid;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-family: sans-serif;
+  float: left;
+  margin: 1%;
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 0.8em;
+  width:23%;
+}
+
+.heading {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.4em;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item span {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 5px;
+}
+.drag_n_drop li {
+  min-height: 30px;
+  display: block;
+  border: 1px solid;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor:move;
+}
+.drag_n_drop ul {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 0;
+  list-style-type: none;
+}
+
+div[data-cat='pro'] .heading {
+  background-color: #c0ff9e;
+}
+div[data-cat='pro'] li {
+  background-color: #e6ffd8;
+  border-color: #7bd24c;
+}
+div[data-cat='con'] .heading {
+  background-color: #ffb8b8;
+}
+div[data-cat='con'] li {
+  background-color: #ffdada;
+  border-color: #f77a7a;
+}
+
+.match_controls {
+  text-align: left;
+  width: 100%;
+  clear: both;
+  margin-right: 20px;
+  font-family: sans-serif;
+}
+.match_results {
+  margin-left: 15px;
+  display: none;
+  color: #008bd2;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.check_results {
+  box-shadow: 2px 2px 2px black;
+  font-size: 1.2em;
+}
+
+.correct, .total {
+  font-weight: bold;
+}
+
+/* -- Dragging and sorting for 06 Paragraphy Pile-up -- */
+
+.tiles ul {
+  padding: 2px 3px 10px 0;
+}
+
+.tiles li {
+  min-height: 30px;
+  display: block;
+  background-color: #f1fdff;
+  border: 1px solid #2494a2;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor:move;
+}
+
+.tiles span {
+  padding: 1px 2px;
+  display: block;
+}
+
+li.red {
+  background-color: #ffdada;
+  border-color: #f77a7a;
+}
+
+li.green {
+  background-color: #e6ffd8;
+  border-color: #7bd24c;
+}
+
+ul.disabled li {
+  cursor:default;
+}
+
+li.placeholder {
+  border:none;
+  border-radius: 0;
+  background-color: #fff48f;
+}
+
+/*--Classes used to show and hide all kinds of elements across pages,
+  at the end to override all other display instructions--*/
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+/*--Media Queries--*/
+
+@media (max-width: 560px) {
+
+  .wrong {
+    width: 100px;
+    padding:5px 3px;
+    font-size: .7em;
+  }
+
+  .tiles ul {
+    width: 85%;
+  }
+
+  .tiles li {
+    font-size: .8em;
+  }
+}
+
+@media (-moz-touch-enabled: 1), (pointer:coarse) {
+    .tiles li {
+        cursor:default;
+    }
+    .drag_n_drop li {
+        cursor:default;
+    }
+}
