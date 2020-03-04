@@ -1,6 +1,6 @@
 body {
 	font-family: Helvetica Neue, Helvetica, Arial;
-	background-image: url("../src/img/wikipedia.png");
+	background-image: url("wikipedia.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 50px; 
