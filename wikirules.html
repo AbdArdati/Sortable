@@ -1,215 +1,418 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="icon" type="image/png" href="st/og-image.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wiki-Rules</title>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-  <link rel="stylesheet" href="activity-style.css">
-	<script src="scripts/jquery-1.7.2.min.js"></script>
-	<script src="scripts/navigation.js"></script>
-</head>
-<body>
-	<div class="wrapper">
-	<div class="header">
-	<div class="mainColor">
-		<h1>Wikipedia Most Important Rules</h1>
-	</div>
-		<div class="darker"></div>
-		<div class="lighter"></div>
-	</div>
+	<head>
+		<link rel="icon" type="image/png" href="st/og-image.png" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wiki-Rules</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+			integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+			integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="st/theme.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Ubuntu:400,500"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="activity-style.css" />
+		<script src="scripts/jquery-1.7.2.min.js"></script>
+		<script src="scripts/navigation.js"></script>
+	</head>
+
+	<body id="boundary">
+		<div class="wrapper">
+			<div class="header">
+				<div class="mainColor">
+          <h1 style="float: left;">Wikipedia Most Important Rules</h1>
+				</div>
+				<div class="darker"></div>
+				<div class="lighter"></div>
+			</div>
+
+			<div class="slide show">
+				<p>
+					In this activity you will collaborate on matching the rules titles'
+					with their descriptions from the list below. The participant with the
+					hights number of matches will win a treat. <br /><br />
+					Soruce: These rules are synthesis from This training session is a
+					synthesis of resources from the Wikimedia UK Training Module,
+					Art+Feminism Beginner Training Module, and Women in Red Online
+					Resources. Have fun!
+				</p>
+			</div>
+
+			<div class="slide">
+        <div class="row">
+        <div class="card border-dark m-2" style="width: 42rem; float:left">
+					<div class="card-header">
+						<p>My contribution to Wikipedia after this training would help me to:</p>
+					</div>
+					<div class="card-body" class="list-group list-group-flush col">
+									<div>
+					<div class="tiles">
+						<h2 id="Stay_neutral">1. Stay neutral</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="All Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Stay neutral&lt;/b&gt; means that all Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias. &lt;i style='float: right; margin-right: 5px; color:black ;'&gt;Heartbroken&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer1" id="Stay_neutral">
+						<p></p>
+					</div>
+
+					<div class="tiles">
+						<h2 id="No_originality">2. No original research</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;No originality&lt;/b&gt; means that Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist. &lt;i style='float: right; margin-right: 5px; color: purple; ;'&gt;Angry&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="No_originality">
+						<p></p>
+					</div>
+
+					<div class="tiles">
+						<h2 id="Maintain_verifiability">3. Maintain verifiability</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="This means that people reading and editing Wikipedia can check that any information comes from a reliable source."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Maintain verifiability&lt;/b&gt; means that people reading and editing Wikipedia can check that any information comes from a reliable source. &lt;i style='float: right; margin-right: 5px; color:deeppink ;'&gt;Uncertain&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>  
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="Maintain_verifiability">
+						<p></p>
+					</div>
+
+					<div class="tiles">
+						<h2 id="Reliable_sources">4. Use reliable sources</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="Your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Use reliable sources&lt;/b&gt; means that your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications. &lt;i style='float: right; margin-right: 5px; color:black;'&gt;Powerful like a speech&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="Reliable_sources">
+						<p></p>
+					</div>
+
+					<div class="tiles">
+						<h2 id="No_promo">
+							5. Wikipedia is not a soapbox or means of promotion
+						</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="It might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Wikipedia is not a soapbox or means of promotion:&lt;/b&gt; It might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work. &lt;i style='float: right; margin-right: 5px; color:green ;'&gt;Tired&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="No_promo">
+						<p></p>
+					</div>
+					<div class="tiles">
+						<h2 id="Test_Notability">6. Test Notability</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="The topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Test Notability&lt;/b&gt; means that the topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage. &lt;i style='float: right; margin-right: 5px; color:deeppink ;'&gt;Amused/Exciting&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="Test_Notability">
+						<p></p>
+					</div>
+
+					<div class="tiles">
+						<h2 id="copyright_violations">
+							7. Be aware of copyright violations
+						</h2>
+						<ul></ul>
+						<input
+							type="hidden"
+							id="rule"
+							name="rule"
+							value="Copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation."
+						/>
+						<input
+							type="hidden"
+							id="fullRule"
+							name="fullRule"
+							value="&lt;i class='my-icon'&gt;&lt;/i&gt; &lt;b&gt;Be aware of copyright violations&lt;/b&gt; means that copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation. &lt;i style='float: right; margin-right: 5px; color:green ;'&gt;Awful&lt;/i&gt;&nbsp;&nbsp;&nbsp; &lt;i class='my-icon-mic'&gt;&lt;/i&gt;" 
+						/>
+						<button class="answer_button disabled" id="button" disabled>
+							Check Answer
+						</button>
+					</div>
+					<div class="answer" id="copyright_violations">
+						<p></p>
+					</div>
+				</div>
+      </div>
+				</div>
 
 
-	<div class="slide show">
-		    <p>In this activity you will collaborate on matching the rules titles' with their descriptions from the list below. The participant with the hights number of matches will win a treat. <br><br> Soruce: These rules are synthesis from This training session is a synthesis of resources from the Wikimedia UK Training Module, Art+Feminism Beginner Training Module, and Women in Red Online Resources. Have fun!</p>
-	</div>
+        <div class="card border-dark m-2" style="width: 44rem; float:right"  >
 
-	<div class="slide">
-<div style="width: 50%; float:left">
-		<div class="tiles">
-			<h2 id="Stay_neutral">1. Stay neutral</h2>
-			<ul></ul>
-      <input type="hidden" id="rule" name="rule" value="All Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Stay neutral means that all Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-		<div class="answer1" id="Stay_neutral"><p></p></div>
-
-		<div class="tiles">
-			<h2 id="No_originality">2. No originality</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist.">
-      <input type="hidden" id="fullRule" name="fullRule" value="No originality means that Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-		<div class="answer" id="No_originality"><p></p></div>
-
-    <div class="tiles">
-			<h2 id="Maintain_verifiability">3. Maintain verifiability</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="This means that people reading and editing Wikipedia can check that any information comes from a reliable source.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Maintain verifiability means that people reading and editing Wikipedia can check that any information comes from a reliable source.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-    <div class="answer" id="Maintain_verifiability"><p></p></div>
-    
-    <div class="tiles">
-			<h2 id="Reliable_sources">4. Use reliable sources</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="Your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Use reliable sources means that your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-    <div class="answer" id="Reliable_sources"><p></p></div>
-    
-    <div class="tiles">
-			<h2 id="No_promo">5. Don’t promo</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="It might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Don’t promo means that you might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-		<div class="answer" id="No_promo"><p></p></div>
-    <div class="tiles">
-			<h2 id="Test_Notability" >6. Test Notability</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="The topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Test Notability means that the topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-    <div class="answer" id="Test_Notability"><p></p></div>
-    
-    <div class="tiles">
-			<h2 id="copyright_violations">7. Be aware of copyright violations</h2>
-			<ul>
-			</ul>
-      <input type="hidden" id="rule" name="rule" value="Copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation.">
-      <input type="hidden" id="fullRule" name="fullRule" value="Be aware of copyright violations means that copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation.">
-			<button class="answer_button">Check Answer</button>
-		</div>
-	<div class="answer" id="copyright_violations"><p></p></div>
-	
+					<div class="card-header">
+						<p>My contribution to Wikipedia after this training would help me to:</p>
+					</div>
+					<div class="card-body" class="list-group list-group-flush col">
+				<div class="tiles" >
+					<h2>Rule descriptions</h2>
+					<ul id="mylist">
+						<li>All Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias.</li>
+						<hr />
+						<li>Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist.</li>
+						<hr />
+						<li>It might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work.</li>
+						<hr />
+						<li>This means that people reading and editing Wikipedia can check that any information comes from a reliable source.</li>
+						<hr />
+						<li>Your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications.</li>
+						<hr />
+						<li>The topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage.</li>
+						<hr />
+						<li>Copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation.</li>
+					</ul>
+				</div>
+      </div>
+				</div>
 </div>
+			</div>
 
-		<div class="tiles"  style="width: 50%; float:right">
-			<h2>Rule descriptions</h2>
-			<ul>
-				<li><span>All Wikipedia articles must be written from an impartial point of view. They should represent significant views fairly and without bias.</span></li>
-				<hr />
-				<li><span>Wikipedia articles must not contain material such as facts, allegations, and ideas for which no reliable, published sources exist.</span></li>
-				<hr />
-				<li><span>It might be tempting to work with a topic you’re directly involved in. But if you think you might have a Conflict Of Interest (COI), don’t create an article. Editors should never write articles about themselves or where they work.</span></li>
-				<hr />
-				<li><span>This means that people reading and editing Wikipedia can check that any information comes from a reliable source.</span></li>
-				<hr />
-				<li><span>Your sources should be published secondary or tertiary sources, as unpublished materials and interviews are not considered reliable. Your best bet is to use academic and peer-reviewed publications.</span></li>
-				<hr />
-				<li><span>The topic must have “received significant coverage” or they should meet these specific guidelines for the topic category. However, just because something doesn’t pass these guidelines, doesn’t mean it’s not important. For example, the histories of black and brown people, queer and trans folk, etc. have often not received significant coverage.</span></li>
-				<hr />
-				<li><span>Copying material without the permission of the copyright holder from sources that are not public domain or compatibly licensed is likely to be a copyright violation.</span></li>
-			</ul>
+			<div class="footer">
+				<div class="mainColor"></div>
+				<div class="darker"></div>
+				<div class="lighter">
+					<div id="navButtons">
+            <button id="back">Back</button> <button id="next">Next</button> <button id="download"> Download a Screenshot</button>
+            <button  id="nextActivity" disabled  onclick="window.location.href = 'https://en.wikipedia.org/wiki/Agnes_Forbes_Blackadder'" target="_blank" class="answer_button disabled">Mind The Gap!</button>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 
-	<div class="footer">
-	<div class="mainColor"></div>
-	<div class="darker"></div>
-	<div class="lighter">
-		<div id="navButtons"><button id="back">Back</button> <button id="next">Next</button></div>
+		<script src="scripts/jquery-ui-1.8.21.min.js"></script>
+		<script src="scripts/jquery.ui.touch-punch.min.js"></script>
 
-	</div>
-	</div>
-	</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				let correct = 0;
+				let wrong = 0;
+				let rules = 7;
+				// Make the tiles sortable
+				$(".tiles ul").sortable({
+					connectWith: ".tiles ul",
+					placeholder: "placeholder",
+					forcePlaceholderSize: true,
+					receive: function(ev, ui) {
+						if ($(this).children().length > 1 && ($(this).attr('id') != "mylist")) {
+							ui.sender.sortable("cancel");
+						}
+						if ($("#mylist li").length == 0) {
+							const button = document.getElementById("button");
+							console.log("button", button);
+							$(":button")
+								.removeAttr("disabled")
+								.removeClass("disabled");
+						}
+					},
 
-  <script src="scripts/jquery-ui-1.8.21.min.js"></script>
-  <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+					start: function(e, ui) {
+						ui.placeholder.height(ui.item.height());
+					}
+				});
 
-	<script type="text/javascript">
-   $(document).ready(function(){
-     let correct= 0;
-     let wrong= 0;
-     let rules= 7;
-      // Make the tiles sortable
-      $( ".tiles ul" ).sortable({
-        connectWith: ".tiles ul",
-        placeholder: "placeholder",
-        forcePlaceholderSize: true,
-        receive: function(ev, ui) {
-            if($(this).children().length > 1)
-              ui.sender.sortable("cancel");
-        },
+				var placeholder = $(".placeholder").sortable(
+					"option",
+					"forcePlaceholderSize"
+				);
+				$(".placeholder").sortable(
+					"option",
+					"placeholder",
+					"forcePlaceholderSize",
+					true
+				);
+				console.log("$('#mylist li').length", $("#mylist li").length);
 
-        start: function(e, ui){
-          ui.placeholder.height(ui.item.height());
+			 $(".answer_button").on("click", function() {
+        //     if ( $(this).hasAttribute('disabled')){
+        //       return false;
+        //   }
+					var activeLists = $(this).siblings("ul");
+					var tiles = activeLists.children("li");
+					var rule = $(this).siblings("#rule")[0].value;
+					var fullRule = $(this).siblings("#fullRule")[0].value;
+
+					// Check if tiles are in full order
+					// Green if element's list id and assigned data-position match
+					// Red if they don't match
+					function answerCheck(tiles) {
+                            console.log("answerCheck -> rule", rule)
+                            console.log("answerCheck -> tiles[0].textContent", tiles[0].textContent.replace(/ \//g,"\n"))
+						if (rule === tiles[0].textContent ) {
+							tiles.addClass("green");
+							correct++;
+						} else {
+							tiles.addClass("red");
+							wrong++;
+						}
+					}
+
+					var h2 = "#" + $(this).siblings("h2")[0].id;
+					console.log("h2", h2);
+					var answerTile = $(this)
+						.parent()
+						.siblings(h2);
+					console.log("answerTile", answerTile);
+					console.log("answerTile", answerTile);
+					var numberOfLists = activeLists.length;
+
+					answerCheck(tiles);
+
+					// Take each li's text in order by data-position
+					// Append it to the empty p in full order
+					console.log("correct", correct);
+					if (correct + wrong == 7) {
+						answerTile
+							.find("p")
+							.append(
+								fullRule +
+									"<hr />Correct answers:&nbsp;" +
+									correct +
+									"	&nbsp;Wrong Answers:	&nbsp;" +
+									wrong
+							);
+					} else {
+						answerTile.find("p").append(fullRule + "<hr />");
+					}
+
+					// Two active lists per slide
+					// Check if the number of sentences per slide is full
+					// Compare with number of elements from original lists
+
+					//Disable sorting on slides where answer button was clicked
+					$(this)
+						.siblings("ul")
+						.addClass("disabled")
+						.sortable("disable");
+					$(this).remove();
+					answerTile.slideDown("slow");
+				});
+			});
+    </script>
+    <script>
+
+      document.getElementById("download").addEventListener("click", function () {
+  
+        html2canvas(document.querySelector('#boundary')).then(function (canvas) {
+  
+          console.log(canvas);
+          saveAs(canvas.toDataURL(), 'Why-I-will-edit-Wikipedia.png');
+        });
+      });
+  
+  
+      function saveAs(uri, filename) {
+  
+        var link = document.createElement('a');
+  
+        if (typeof link.download === 'string') {
+  
+          link.href = uri;
+          link.download = filename;
+  
+          //Firefox requires the link to be in the body
+          document.body.appendChild(link);
+  
+          //simulate click
+          link.click();
+  
+          //remove the link when done
+          document.body.removeChild(link);
+  
+        } else {
+  
+          window.open(uri);
+  
         }
-      });
-
-      var placeholder = $( ".placeholder" ).sortable( "option", "forcePlaceholderSize" );
-      $( ".placeholder" ).sortable( "option", "placeholder", "forcePlaceholderSize", true);
-
-
-      $(".answer_button").on("click", function(){
-
-        var activeLists = $(this).siblings("ul");
-        var tiles = activeLists.children("li");
-        var rule = $(this).siblings("#rule")[0].value;
-        var fullRule = $(this).siblings("#fullRule")[0].value;
-
-        // Check if tiles are in full order
-        // Green if element's list id and assigned data-position match
-        // Red if they don't match
-        function answerCheck(tiles) {
-            if(rule ===  tiles[0].textContent){tiles.addClass("green");
-            correct++
-          }
-          else{
-            tiles.addClass("red")
-          wrong++
-          }
-          }
-        
-        var h2 ="#"+$(this).siblings("h2")[0].id;
-        console.log("h2", h2)
-        var answerTile = $(this).parent().siblings(h2);
-        console.log("answerTile", answerTile)
-        console.log("answerTile", answerTile)
-        var numberOfLists = activeLists.length;
-
-      
-          answerCheck(tiles);
-
-
-      // Take each li's text in order by data-position
-      // Append it to the empty p in full order
-      console.log("correct", correct)
-      if(correct+ wrong == 7){
-        answerTile.find("p").append(fullRule+"<hr />Correct answers:&nbsp;"+correct+"	&nbsp;Wrong Answers:	&nbsp;"+wrong);
-      }else{
-
-        answerTile.find("p").append(fullRule+"<hr />");
       }
-
-        // Two active lists per slide
-        // Check if the number of sentences per slide is full
-        // Compare with number of elements from original lists
-
-       
-
-        //Disable sorting on slides where answer button was clicked
-        $(this).siblings("ul").addClass("disabled").sortable("disable");
-        $(this).remove();
-        answerTile.slideDown("slow");
-
-      });
-    });
-
-  </script>
-
-</body>
+  
+    </script>
+  <script type="text/javascript" src="html2canvas.js"></script>
+  </body>
 </html>

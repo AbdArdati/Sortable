@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" type="image/png" href="st/og-image.png">
+	<title>Draft-Article</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="st/theme.css">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta property="og:image" content="/st/og-image.png" />
+	<meta name="keywords"
+		content="sortable, reorder, list, javascript, html5, drag and drop, dnd, animation, groups, dnd, sortableJS" />
+	<meta name="description"
+		content="Sortable — is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery required. Supports Meteor, AngularJS, React, Polymer, Vue, Knockout and any CSS library, e.g. Bootstrap." />
+	<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body id="boundary">
+	<div class="container" class="content">
+		<div class="row">
+			<div class="row">
+				<div class="card border-dark m-2" style="width: 71rem;">
+					<div class="card-header text-center">
+						<h3>Draft Article</h3>
+					</div>
+					<div class="card-body text-center">
+						<h4 class="col-12">
+							If you are sure that the article does not exist on Wikipedia, create a draft article using the &nbsp;<a href="https://en.wikipedia.org/wiki/Wikipedia:Article_wizard" target="_blank" class="btn btn-info btn-lg">article wizard</a>&nbsp;tool. Then, copy the template below and paste it in the created draft article. More information about draft articles could be found through the following link: <a href="https://en.wikipedia.org/wiki/Wikipedia:Drafts#Creating_and_editing_drafts">Creating and editing drafts</a>
+							</h4>
+					</div>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="card border-dark m-2" style="width: 70rem;">
+					<div class="card-header text-center">
+						Biography Template</div>
+					<div class="card-body" id="wikipediaUser-left" class="list-group list-group-flush col">
+						<div class="input-group">
+							<div class="input-group-prepend">
+							  <button class="input-group-text btn btn-info" onclick="copy1()">Copy</button>
+							</div>
+							<textarea style="height: 200px;" id="textarea1" class="form-control" aria-label="With textarea">
+{{ Infobox scientist
+| name              = Firstname Middle Lastname
+| image             = nameOfPicture.jpeg
+| image_size        = 200px
+| caption           = Firstname Middle Lastname
+| birth_date        = {{Birth date|yyyy|mm|dd}}  
+| birth_place       = [[city]], [[state]], [[United States|US]]  
+| death_date        = 
+| death_place       = 
+| nationality       = American
+| fields            = [[Computer Science]]
+| workplaces        = [[Place1]]<br />[[Place2]]
+| alma_mater        = [[XXX University]]
+| doctoral_advisor  = [[Firstname LastName]]
+| doctoral_students = 
+| known_for         = [[programming languages]]
+| website           = {{URL|http://website}} 
+| awards            = [[ACM Fellow]] (year?)<br> IEEE Fellow (year?)  
+}}
+
+'''Firstname Lastname''' is an American [[Computer Scientist]] noted for her research on [[hardware]] and [[software]]. She is also noted for her leadership in broadening participation in computing. She is currently the Co-Chair of [[Some prominent organization ]] from 2011-2014.
+
+==Biography==
+LASTNAME received a [[Bachelor of Arts|B.A.]] in [[Computer Science ]] from [[XXX University]] in YEAR. She received a [[Master of Science|M.S.]] in [[Computer Science]] from [[XXX University]] in YEAR and a [[Doctor of Philosophy|Ph.D]] in [[Computer Science]] from  [[XXX University]] in YEAR.
+
+She then joined the Department of Computer Science at the [[XXX University]] as an Assistant Professor in YEAR. While there she was promoted to Associate Professor in YEAR. In 2001, she moved to [[YYY University]] as an Associate Professor. In YEAR, she was promoted to Professor and in YEAR to Endowed Professor in Computer Science. In YEAR she moved to [[COMPANY]]  as a Principal Researcher. 
+
+==Career==
+
+Here you can describe her important research and be sure to include
+references to papers. See the template references in the guide. 
+
+Here is a reference to an article from the News and Observer newspaper blog.<ref>
+{{cite web
+|author=News and Observer
+|url=http://blogs.newsobserver.com/campusnotes/fifty-years-of-chem-at-duke
+|title=Fifty years of chem at Duke 
+|publisher=blogs.newsobserver.com 
+|date=2009-09-16
+|accessdate=2013-03-28
+}}</ref> 
+
+Here is an example of how to cite a technical paper. 
+She is known for her work on the Wattch power modeling 
+infrastructure, which allowed computer architects to perform early-stage 
+assessments of processor power consumption <ref> {{cite journal
+|author =David Brooks, Vivek Tiwari, and Margaret Martonosi
+|year = 2000
+|title =Wattch: a framework for architectural-level power analysis 
+and optimizations
+|journal =27th Annual International Symposium on Computer 
+Architecture (ISCA '00).
+|pages = p. 83-94}}
+</ref>.
+
+
+Here is the template for a reference for a journal publication:
+<ref> {{cite journal
+|doi = 
+|author = 
+|year =
+|title =
+|journal =
+|volume =
+|issue=
+|pages = 
+</ref>
+
+Here is the template for a URL article
+<ref> {{cite journal
+|doi = 
+|author = 
+|year =
+|title =
+|journal =
+|volume =
+|issue=
+|pages = 
+</ref>
+
+
+
+==Awards==
+
+Here is a reference to an award. In the year YEAR, she became an ACM Fellow
+<ref> 
+{{cite web 
+|author= Association of Computing Machinery
+|url= http://www.acm.org/press-room/news-releases/2010/fellows-2010 
+|title=ACM Names 41 Fellows from World's Leading Institutions: Many Innovations Made in Areas Critical to Global Competitiveness
+|publisher= ACM
+|date=2013-12-07
+|accessdate= 2011-11-20
+}}</ref>.
+
+
+Her other notable awards include:
+* list other awards here  with references if possible.
+
+==References==
+{{reflist}}
+
+==External links==
+* University of Texas at Austin: [http://www.university.edu/~name/ FirstName LastName, Department of Computer Science]  
+
+{{Persondata <!-- Metadata: see [[Wikipedia:Persondata]]. -->
+| NAME              = Last, First middleInitial
+| ALTERNATIVE NAMES =
+| SHORT DESCRIPTION = American computer scientist
+| DATE OF BIRTH     = Month dd, yyyy
+| PLACE OF BIRTH    = [[city, state]], [[United States]]
+| DATE OF DEATH     =
+| PLACE OF DEATH    =
+}}
+{{DEFAULTSORT:Lastname, Firstname}}
+[[Category:Women computer scientists]]
+[[Category:University of Texas at Austin faculty]]
+[[Category:Fellows of the Association for Computing Machinery]]
+[[Category:Fellows of the Institute of Electrical and Electronics Engineers]]
+[[Category:Living people]]
+[[Category:Women in technology]]</textarea>
+						  </div>
+					</div>
+				</div>
+
+
+				</div>
+			</div>
+			<hr />
+			<div class="container m-4">
+                <footer id="footer" class="mb-20 text-center"><div id="footer-content" class="text-muted mb-2">Template from Susan H. Rodger: https://www2.cs.duke.edu/csed/wikipedia/templatePersonWikipediaPage.txt</div></footer>
+			</div>
+        </div>
+
+	</div>
+
+	<!-- Latest Sortable -->
+		<script>
+
+		function copy1() {
+		let textarea = document.getElementById("textarea1");
+		textarea.select();
+		document.execCommand("copy");
+		}
+		function copy2() {
+		let textarea = document.getElementById("textarea2");
+		textarea.select();
+		document.execCommand("copy");
+		}
+
+
+	</script>
+	<script type="text/javascript" src="st/prettify/prettify.js"></script>
+	<script type="text/javascript" src="st/prettify/run_prettify.js"></script>
+	<script type="text/javascript" src="html2canvas.js"></script>
+	<script src="st/app.js"></script>
+</body>
+
+</html>

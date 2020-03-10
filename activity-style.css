@@ -15,6 +15,7 @@ html {
 p {
   margin: .5em 0;
   line-height: 1.4;
+  font-size: 1.2rem;
 }
 
 textarea, input[type="text"] {
@@ -94,7 +95,7 @@ h1 {
 }
 
 h2 {
-  color: #747474;
+  color: #474747;
   margin: 7px 0;
   font-size: 1.4em;
 }
@@ -152,6 +153,14 @@ button {
   display: none;
 }
 
+#navButtons.first #download {
+  display: none;
+}
+
+#navButtons.first #nextActivity {
+  display: none;
+}
+
 #navButtons.last #next {
   display: none;
 }
@@ -161,7 +170,7 @@ img {
 }
 
 li {
-  font-size: 1em;
+  font-size: 1.2em;
   margin:0;
 }
 
@@ -509,4 +518,10 @@ li.placeholder {
     .drag_n_drop li {
         cursor:default;
     }
+}
+
+.disabled {
+  background: #999 ; 
+  color: #555;
+  cursor: not-allowed;
 }
