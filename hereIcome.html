@@ -102,20 +102,42 @@
 						  </div>
 					</div>
 				</div>
-
-				<div class="card border-dark m-2" style="width: 35rem;">
+				<div>
+					<div class="row ml-1">				
+						<div class="card border-dark m-2" style="width: 35rem;">
+						<div class="card-header text-center">
+							<b>New user being trained template</b>
+						</div>
+						<div class="card-body" id="wikipediaUser-left" class="list-group list-group-flush col">
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <button class="input-group-text btn btn-info" onclick="copy4()">Copy</button>
+								</div>
+								<textarea id="textarea4" class="form-control" style="height: 2.3rem;" aria-label="With textarea">{{New user being trained}}</textarea>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="row ml-1">				
+					<div class="card border-dark m-2" style="width: 35rem;">
 					<div class="card-header text-center">
-						<b>Template</b>
+						<b>Asking for help on your talk page</b>
 					</div>
 					<div class="card-body" id="wikipediaUser-left" class="list-group list-group-flush col">
 						<div class="input-group">
 							<div class="input-group-prepend">
-							  <button class="input-group-text btn btn-info" onclick="copy4()">Copy</button>
+							  <button class="input-group-text btn btn-info" onclick="copy5()">Copy</button>
 							</div>
-							<textarea id="textarea4" class="form-control" aria-label="With textarea">{{This is a new user}}</textarea>
+							<textarea id="textarea5" class="form-control"  style="height: 124px;" aria-label="With textarea">I need help please. ~~~~ {{helpme}}
+: What kind of help? could you be more spesific please? ~~~~ 
+:: I want to learn how to indent and sign my reply! ~~~~
+::: But, you are already indenting by using the <code><nowiki>:</nowiki></code> and by signing using the <code><nowiki>~~~~</nowiki></code> -___-  ~~~~</textarea>
 						  </div>
 					</div>
 				</div>
+			</div>
+				</div>
+
 			</div>
 			<hr />
 			<div class="container m-4">
@@ -151,6 +173,11 @@
 		document.execCommand("copy");
 		}
 
+		function copy5() {
+		let textarea = document.getElementById("textarea5");
+		textarea.select();
+		document.execCommand("copy");
+		}
 
 	</script>
 	<script type="text/javascript" src="st/prettify/prettify.js"></script>
