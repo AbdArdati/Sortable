@@ -233,7 +233,7 @@
 		<script src="lib/jquery/jquery.js"></script>
 
 		<!-- oojs -->
-		<script src="lib/oojs/oojs.jquery.js"></script>
+		<script src="lib/oojs/ojquery.jsojs."></script>
 
 		<!-- oojs-ui -->
 		<script src="lib/oojs-ui/oojs-ui-core.js"></script>
@@ -753,22 +753,22 @@
 				$('#meetDiv').draggable({
 					handle: '#contentTitle'
 				});
-				$("#resizableMeetDev").resizable({
-					handles: 'n, e, s, w, ne, se, sw, nw'
-				});
-				$('#resizableMeetDev').resizable({
-					stop: function (event, ui) {						
-						$("#meet").remove();
-						$('#resizableMeetDev').append('<div id="meet" style="text-align: center;"></div>');
-						const api = new JitsiMeetExternalAPI(domain, {
-							roomName: 'JitsiCollaborationMeetAPIExample',
-							width: $('#resizableMeetDev').width(),
-							height: $('#resizableMeetDev').height(),
-							parentNode: document.querySelector('#meet')
-						})
-					},
-					//resize : function(event,ui) {	const api = new JitsiMeetExternalAPI(domain, options);}
-				});
+				// $("#resizableMeetDev").resizable({
+				// 	handles: 'n, e, s, w, ne, se, sw, nw'
+				// });
+				// $('#resizableMeetDev').resizable({
+				// 	stop: function (event, ui) {						
+				// 		$("#meet").remove();
+				// 		$('#resizableMeetDev').append('<div id="meet" style="text-align: center;"></div>');
+				// 		const api = new JitsiMeetExternalAPI(domain, {
+				// 			roomName: 'JitsiCollaborationMeetAPIExample',
+				// 			width: $('#resizableMeetDev').width(),
+				// 			height: $('#resizableMeetDev').height(),
+				// 			parentNode: document.querySelector('#meet')
+				// 		})
+				// 	},
+				// 	//resize : function(event,ui) {	const api = new JitsiMeetExternalAPI(domain, options);}
+				// });
 				function focusMeet () {
 				document.getElementById('meetDiv').style.zIndex = 1;
 				}

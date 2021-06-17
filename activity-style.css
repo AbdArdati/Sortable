@@ -442,7 +442,7 @@ div[data-cat='con'] li {
 /* -- Dragging and sorting for 06 Paragraphy Pile-up -- */
 
 .tiles ul {
-  padding: 5px 5px 5px 5px;
+  padding: 25px 5px 25px 5px;
   width: 95%;
   position: center;
   background-color: lightskyblue;
